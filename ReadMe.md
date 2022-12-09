@@ -28,6 +28,31 @@ Part3
 一旦Up
 
 Part4 Global Error Handling
+	・1つ目
+		Middleware作成
+			UseMiddlewareを使う
+	・2つ目
+		Filters作成
+			AddControllersに追加
+	・3つ目
+		RFCの基準にのっとる
+			problemDetailsの形に
+			AddControllersからはずす
+				UseExceptionHandlerに変更
+				ErrorsControllerも用意
+					Problemを返したら、いい感じになった
+						typeとか。traceIdとか
+		↓
+		Factoryとかを用意すればDefaultのメッセージを変更可能
+
+		builderについか?
+		良く分からんまま終わった
+
+いったんアップ
+
+Part5 FlowControl
+
+		
 
 2022/12/08
 ApiとContractsが一緒（PresentationLayer）
