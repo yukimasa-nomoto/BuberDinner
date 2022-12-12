@@ -1,5 +1,5 @@
 
-using BuberDinner.Api.Errors;
+using BuberDinner.Api.Common.Errors;
 using BuberDinner.Api.Filters;
 using BuberDinner.Api.Middleware;
 using BuberDinner.Application.Services;

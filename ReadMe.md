@@ -1,3 +1,35 @@
+2022/12/12
+Part5 FlowControl
+	エラーの取り方を変更していく　4か所
+		Application
+			CommonにErrorsを作る
+		DatetimeProviderもエラー出すらしい
+		↓
+		「oneOf」を使うやり方
+		↓
+		「FluentResults」を使うやり方
+			IErrorとかある
+		↓
+		「ErrorOr & DomainErrors」
+			DomainにErrorOrをインストール
+				Domainにエラーをまとめてる。Applicationに分けるのも良いね！とは言ってそう
+			Errors.User.csを作成
+			Appicationでも「ErrorOr」が使えるね。
+			↓
+			Exception出なくても判定できるように対応
+			↓
+			Loginも修正
+				Errorsをpartialに
+			↓
+			ApiControllerにエラーを集結
+		↓
+		customValueも設定
+			ApiControllerのProblemでHttpContextに放り込む
+			factoryで引き出す
+一旦Up
+
+Part6
+
 2022/12/09
 次は、ApplicationLayerでAuthを行う
 （31:35）
@@ -50,7 +82,6 @@ Part4 Global Error Handling
 
 いったんアップ
 
-Part5 FlowControl
 
 		
 
