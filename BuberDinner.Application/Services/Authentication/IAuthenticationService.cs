@@ -1,4 +1,5 @@
-﻿using ErrorOr;
+﻿using BuberDinner.Application.Authentication.Common;
+using ErrorOr;
 using System;
 using System.Collections.Generic;
 using System.Linq;

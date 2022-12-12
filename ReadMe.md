@@ -28,7 +28,29 @@ Part5 FlowControl
 			factoryで引き出す
 一旦Up
 
-Part6
+Part6（CQRS+MedeiatR）
+	IAuthencicationServiceをCommandに
+	Queryも用意する
+	↓
+	丁寧に分けても冗長なので
+	Commandにする(Serviceをやめる)
+	↓
+	それならMediatRを使おう！
+		ApplicationにMediatRをインストール
+		で、Apiで使う
+			sendでよんで、
+			CommandとHandlerをApplication内に作る
+	↓
+	MediatRのExtensionもいれる。DIで呼ぶときに使用
+	↓
+	動作完了
+		hub的なものを作らないでもよくなった。
+
+一旦Up
+
+Part7(Object Mapping)
+
+	
 
 2022/12/09
 次は、ApplicationLayerでAuthを行う
