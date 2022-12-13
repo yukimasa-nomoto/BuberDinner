@@ -10,6 +10,35 @@ Part7(Object Mapping)
 
 一旦Up
 
+Part8(Fluent Validation)
+	application common behaviors
+	まずMediatRのIPipelineBehaviorを記載
+		commandの実行前、後を取得可能
+		Dependecyに追加
+		RegisterCommandで確認OK
+	↓
+	ApplicationにFluentValidationをインストール
+		RegisterCommandValidatorを作成
+			AbstractValidatorを継承
+		Dependencyに追加
+			(IValidatorで)
+			
+		↓
+		FluentValidation.AspNetCoreをインストール
+			１こ１こ登録がめんどくさいから
+	↓
+	TRequestとTResponseで再構築
+		ValidationBehaviorに変更
+		dynamicで逃げる
+		dependencyInjectionにすべて登録
+		コンストラクタ引数にnull追加
+	↓
+	ApiControllerの修正
+		ModelStateDictionaryを用意
+	↓
+	LoginQueryValidatorの追加
+
+一旦Up
 
 2022/12/12
 Part5 FlowControl
