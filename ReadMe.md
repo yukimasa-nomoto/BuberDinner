@@ -60,6 +60,14 @@ Part9(DinnersController Authenticate user 用)
 	ApiControllerに[Authorize]をつけて
 	AuthenticationControllerに[AllowAnonymous]を付けて対応
 
+一旦Up
+
+Part10
+Part11(Aggregates {Entity,ValueObject(IDで渡す奴)})
+
+一旦Up
+Part12
+
 2022/12/12
 Part5 FlowControl
 	エラーの取り方を変更していく　4か所
