@@ -1,3 +1,16 @@
+2022/12/13
+Part7(Object Mapping)
+	APIに「Mapster」「Mapster.DependencyInjection」をインストール
+	↓
+	common mapping フォルダーに共通処理[AuthenticationMappingConfigure]作成
+	これをcallするDependencyInjectionを作成
+	↓
+	DependencyInjectionをAddPresentationで用意する
+		mapping用に用意したDependencyInjectionをCall
+
+一旦Up
+
+
 2022/12/12
 Part5 FlowControl
 	エラーの取り方を変更していく　4か所
@@ -48,7 +61,7 @@ Part6（CQRS+MedeiatR）
 
 一旦Up
 
-Part7(Object Mapping)
+
 
 	
 
