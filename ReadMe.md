@@ -40,6 +40,26 @@ Part8(Fluent Validation)
 
 一旦Up
 
+Part9(DinnersController Authenticate user 用)
+	UseAuthentication使用
+	AddInfrastructureをAddAuthとわける
+	InfrastructureにJwtBearerをインストール
+		tokenを持っている人を認証とする？
+	↓
+	何やら記載
+	↓
+	DinnersControllerで
+	this.HttpContext.User.Identity.IsAuthenticated=falseを確認
+	↓
+	Getにトークンをつけて、再確認
+		IsAuthenticatedまで確認OK
+	↓
+	UseAuthorizationもつける
+		これで、アクセス可、不可をやってるっぽい
+	↓
+	ApiControllerに[Authorize]をつけて
+	AuthenticationControllerに[AllowAnonymous]を付けて対応
+
 2022/12/12
 Part5 FlowControl
 	エラーの取り方を変更していく　4か所

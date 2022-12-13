@@ -38,6 +38,7 @@ namespace BuberDinner.Application.Common.Behaviors
             {
                 var result = await next();
                 //after the handler
+                return result;
             }
 
             var errors = validationResult.Errors
