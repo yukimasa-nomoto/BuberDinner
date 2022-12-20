@@ -67,6 +67,11 @@ Part11(Aggregates {Entity,ValueObject(ID‚Å“n‚·“z)})
 
 ˆê’UUp
 Part12
+	Domain Common Models‚ÉValueObject‚ğabstract‚Åì¬
+	«
+	Entity‚àì¬
+	«
+	AggregateRoot‚àì¬
 
 2022/12/12
 Part5 FlowControl
