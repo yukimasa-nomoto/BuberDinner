@@ -1,3 +1,25 @@
+2022/12/20
+Part12
+	Domain Common ModelsにValueObjectをabstractで作成
+	↓
+	Entityも作成
+	↓
+	AggregateRootも作成
+一旦Up
+
+
+Part13
+どういうフォルダー構成にするか？
+	Menuというフォルダーから開始する事とする
+		メニュークラスを作成(AggregateRoot)
+		↓
+		MenuIdというValueOjectが必須
+			Guidにして、CreateUniqueメソッドも作る
+			コンストラクタはprivateにして
+
+
+
+
 2022/12/13
 Part7(Object Mapping)
 	APIに「Mapster」「Mapster.DependencyInjection」をインストール
@@ -66,12 +88,8 @@ Part10
 Part11(Aggregates {Entity,ValueObject(IDで渡す奴)})
 
 一旦Up
-Part12
-	Domain Common ModelsにValueObjectをabstractで作成
-	↓
-	Entityも作成
-	↓
-	AggregateRootも作成
+
+
 
 2022/12/12
 Part5 FlowControl
