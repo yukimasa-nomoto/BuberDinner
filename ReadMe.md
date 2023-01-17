@@ -1,3 +1,49 @@
+2023/01/17
+別PCで実施
+	Postmanを入れてloginまでたどり着かない
+		https://localhost:7285/auth/login　と　body-->raw-->jsonに各種値を記載-->設定で辿り着いた
+
+		https://localhost:7285/Dinners
+			→ AuthorizationにBarer Tokenに入れたら行けた。時間制限あるので要注意
+↓
+13章まで実装完了ぽい
+	ソースがすべてyoutube上にない
+14章を続けてみる
+	201 Created
+	↓
+	全部 「.net7.0」に変更
+	↓
+	Menuを開始	また最初からっぽいので参考になる
+		ContractsにMenus--->CreateMenuRequestを用意
+			ContractsからDomainを参照するように＜ーーーしてはいけなかった。
+				→自分のところに作成
+		MenuResponseを用意
+
+		・MenusControllerを用意
+			{hostId}とRouteに記載。　CreateMenuと書かなくても。
+				→　https://localhost:7285/hosts/asdf/menus　でOK
+
+		・Mediator,Commandを用意
+			・ApplicationにMenus --> Commands -->CreateMenu を用意
+				→CreateMenuCommand <-- IRequestを継承
+				 CreateMenuCommandHandler <-- IRequestHandlerを継承
+				(同じようなのを各Layerに用意。理由は英語なのでわからない)
+			・Controller内でmapperを使ってコマンド作成
+				()が２つ必要
+			・MenuMappingConfigを作る
+				値の受け渡し
+			・medeiator send(command)
+
+			ここでMenuクラスの差異が出てきた------------------------- なんとか実装したい
+
+			・IMenuRepositoryを作成
+				ApplicationのCommon--->Interfaces ---> Persistenceに
+
+			・CreateMenuCommandValidator
+コミット(Up)
+	次のは１時間あって、関係ないところが多々ありそう
+
+
 2022/12/20
 Part12
 	Domain Common ModelsにValueObjectをabstractで作成

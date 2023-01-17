@@ -23,11 +23,19 @@ namespace BuberDinner.Infrastructure
         public static IServiceCollection AddInfrastructure(this IServiceCollection services
             , ConfigurationManager configuration)
         {
-            services.AddAuth(configuration);
+            object value = services.AddAuth(configuration).AddPersintence();
 
             services.AddSingleton<IDateTimeProvider , DateTimeProvider>();
 
+
+            return services;
+        }
+
+        public static IServiceCollection AddPersintence(this IServiceCollection services)
+        {
             services.AddScoped<IUserRepository, UserRepository>();
+
+            services.AddScoped<IMenuRepository, MenuRepository>();
 
             return services;
         }
